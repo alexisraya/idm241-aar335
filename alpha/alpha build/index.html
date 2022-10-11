@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alpha Build</title>
+</head>
+<body>
+    <div class = "title">
+        <h1><a href="https://www.walmart.com/shop/all-halloween?athcpid=fa332750-17ef-49ad-92a4-b03d9c81dc16&athpgid=AthenaHomepageDesktop&athznid=athenaModuleZone&athmtid=AthenaHeroPov&athtvid=1&athena=true&athstid=CS012%7CCS041&athftid=P0000&athguid=sK-55qulmte6dBUMGWMETNKn9zcTq2QWcdvG" target="_blank">Walmart</a> Microinteraction - Alpha Build</h1>
+        <h2>Interaction: Adding an item into the cart</h2>
+    </div>
+    
+    <div class="box">
+            <button class="add-btn js-btn">
+
+                <span class="btn-text js-text">+ Add</span>
+                <div class = "btn-items js-items">
+                    <div class=" math-btn minus js-minus">
+                        <p class="minus-text js-minus-text">-</p>
+                    </div>
+            
+                    <span class="btn-text js-value">1</span>
+            
+                    <div class="math-btn plus js-plus">
+                        <p class="plus-text js-plus-text">+</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+    <h2 class="section_title">Notes</h2>
+    <!--Triggers-->
+    <div class="notes">
+        <div class = "section">
+            <h3 class = "section__title">Triggers</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">Clicking on the “+ Add” button</li>
+            </ul>
+        </div>
+
+        <!--Rules-->
+        <div class = "section">
+            <h3 class = "section__title">Rules</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">the pill surrounding the add button increases its length by 50px</li>
+                <li class="section__ulst--item">the words “+ Add” changes to “- 1 +”</li>
+                <li class="section__ulst--item">the item is stored in a data base for the cart</li>
+                <li class="section__ulst--item">(On Hover) pointer changes to cursor</li>
+                <li class="section__ulst--item">(Off Hover) pointer changes to default</li>
+            </ul>
+        </div>
+
+        <!--Feedback-->
+        <div class = "section">
+            <h3 class = "section__title">Feedback</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">the pill surrounding the add button increases its length by double</li>
+                <li class="section__ulst--item">the words “+ Add” changes to “- 1 +”</li>
+                <li class="section__ulst--item">(On Hover) pointer changes to cursor</li>
+                <li class="section__ulst--item">(Off Hover) pointer changes to default</li>
+            </ul>
+        </div>
+
+        <!--Loops and Modes-->
+        <div class = "section">
+            <h3 class = "section__title">Loops and Modes</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">no loops</li>
+                <li class="section__ulst--item">cart total increases by 1, when the item is added into the cart, the button’s text changes from “+ Add” changes to “- 1 +”</li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
