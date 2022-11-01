@@ -135,12 +135,24 @@ body{
     color: white;
 }
 
+.btn-text:hover{
+    cursor: pointer;
+}
+
 .add-btn-grow{
     transition: 0.5s;
     width: 150px;
     height: 40px;
     margin: auto;
     border-radius: 20px;
+}
+
+.btn-items{
+    cursor: default;
+}
+
+.value-label:hover{
+    cursor: default;
 }
 
 .math-btn{
@@ -157,6 +169,7 @@ body{
 
 .math-btn:hover{
     border: 1px solid white;
+    cursor: pointer;
 }
 .minus-text, .plus-text{
     color: white;
