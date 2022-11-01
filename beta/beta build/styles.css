@@ -51,6 +51,9 @@ a{
 
 body{
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title{
@@ -96,7 +99,7 @@ body{
 .box {
     width: auto;
     height: auto;
-    margin: 70px 0 40px 0;
+    margin: 70px 0 40px -105px;
     background-color: #FFFFFF;
     display: flex;
     align-items: flex-end;
@@ -176,6 +179,10 @@ body{
     margin: 0px;
     font-weight: bolder;
     text-align: center;
+}
+
+.minus-text{
+    margin-top: -1px;
 }
 
 @media (min-width: 620px) {
