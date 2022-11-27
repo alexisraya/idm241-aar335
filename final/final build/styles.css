@@ -42,10 +42,6 @@ h4{
 p, li{
     font-family: 'Inter', monospace, sans-serif;
     size: var(--p-size);
-    line-height: 1.25rem;
-}
-li{
-    padding-bottom: .75rem;
 }
 a{
     color: var(--blue);
@@ -88,18 +84,123 @@ body{
 .images{
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
     max-width: 1000px;
 }
 
 .images__image{
-    /* border:solid 3px var(--blue);
-    border-radius: 5px; */
+    border:solid 3px var(--blue);
+    border-radius: 5px;
     width: 100%;
 }
 
+/* PRODUCT STYLE */
+.product {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
 
+.product_image{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+/* BUTTON */
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 70px 0 40px -105px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 7px rgb(0 0 0 / 0.25);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.btn-items{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+}
+
+.add-btn {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    background-color: #2C72D5;
+    margin: auto;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.btn-text{    
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    transition: 0.5s;
+    text-align:center;
+    color: white;
+}
+
+.btn-text:hover{
+    cursor: pointer;
+}
+
+.add-btn-grow{
+    transition: 0.5s;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.btn-items{
+    cursor: default;
+}
+
+.value-label:hover{
+    cursor: default;
+}
+
+.math-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 10px;
+    height: 8px;
+    background-color: #27396A;
+    border: 1px solid transparent;
+    border-radius: 100px;
+}
+
+.math-btn:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+.minus-text, .plus-text{
+    color: white;
+    margin: 0px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.minus-text{
+    margin-top: -1px;
+}
 
 @media (min-width: 620px) {
     .notes{

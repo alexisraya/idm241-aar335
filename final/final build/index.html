@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Build</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class = "js-box">
+    <div class = "title">
+        <h1><a href="https://www.walmart.com/shop/all-halloween?athcpid=fa332750-17ef-49ad-92a4-b03d9c81dc16&athpgid=AthenaHomepageDesktop&athznid=athenaModuleZone&athmtid=AthenaHeroPov&athtvid=1&athena=true&athstid=CS012%7CCS041&athftid=P0000&athguid=sK-55qulmte6dBUMGWMETNKn9zcTq2QWcdvG" target="_blank">Walmart</a> Microinteraction - Beta Build</h1>
+    <h2>Interaction: Adding an item into the cart</h2>
+    </div>
+    
+    <!-- <div class = "product"> -->
+        <div class="box">
+            <picture>
+                <source media="(max-width: 0px)" srcset="../assets/Milk.png">
+                <img class="product_image" src="../assets/Milk.png" alt="Product Image">
+            </picture>
+            <button class="add-btn js-btn">
+                <span class="btn-text js-text">+ Add</span>
+                <div class = "btn-items js-items">
+                    <div class=" math-btn minus js-minus">
+                        <p class="minus-text js-minus-text">-</p>
+                    </div>
+            
+                    <span class="value-label btn-text js-value">1</span>
+            
+                    <div class="math-btn plus js-plus">
+                        <p class="plus-text js-plus-text">+</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+    <!-- </div> -->
+    
+
+    <h2 class="section_title">Notes</h2>
+    <!--Triggers-->
+    <div class="notes">
+        <div class = "section">
+            <h3 class = "section__title">Triggers</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">Clicking on the “+ Add” button</li>
+                <li class="section__ulst--item">Hovering on the “+ Add” button</li>
+                <li class="section__ulst--item">Hovering off the “+ Add” button</li>
+                <li class="section__ulst--item">Clicking on the plus sign</li>
+                <li class="section__ulst--item">Clicking on the minus sign</li>
+                <li class="section__ulst--item">Clicking off the button (anywhere else on the screen)</li>
+            </ul>
+        </div>
+
+        <!--Rules-->
+        <div class = "section">
+            <h3 class = "section__title">Rules</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">The pill surrounding the add button increases its length by 50px</li>
+                <li class="section__ulst--item">The words “+ Add” changes to “- 1 +”</li>
+                <li class="section__ulst--item">The item is stored in a data base for the cart</li>
+                <li class="section__ulst--item">(On Hover) pointer changes to cursor</li>
+                <li class="section__ulst--item">(Off Hover) pointer changes to default</li>
+                <li class="section__ulst--item">When the plus sign clicked, total shown in the button increases by one</li>
+                <li class="section__ulst--item">When the plus sign clicked, variable total increases by one</li>
+                <li class="section__ulst--item">When the minus sign clicked, total shown in the button decreases by one</li>
+                <li class="section__ulst--item">When the minus sign clicked, variable total increases by one</li>
+                <li class="section__ulst--item">When the total is at 1 and the user clicks on the minus sign again, the button goes back to the "+ Add" default and the item is removed from the data base for the cart</li>
+                <li class="section__ulst--item">While clicking on the plus or minus sign, the respective sign text color will change from white to a dark grey</li>
+                <li class="section__ulst--item">While clicking anywhere on the screen and away from the button, the button will srhink into a circle with the total ammount of items still being shown inside the circle</li>
+            </ul>
+        </div>
+
+        <!--Feedback-->
+        <div class = "section">
+            <h3 class = "section__title">Feedback</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">The pill surrounding the add button increases its length by 50px</li>
+                <li class="section__ulst--item">The words “+ Add” changes to “- 1 +”</li>
+                <li class="section__ulst--item">(On Hover) pointer changes to cursor</li>
+                <li class="section__ulst--item">(Off Hover) pointer changes to default</li>
+                <li class="section__ulst--item">When the plus sign clicked, total shown in the button increases by one</li>
+                <li class="section__ulst--item">When the minus sign clicked, total shown in the button decreases by one</li>
+                <li class="section__ulst--item">When the total is at 1 and the user clicks on the minus sign again, the button goes back to the "+ Add" default</li>
+                <li class="section__ulst--item">While clicking on the plus or minus sign, the respective sign text color will change from white to a dark grey</li>
+                <li class="section__ulst--item">While clicking anywhere on the screen and away from the button, the button will srhink into a circle with the total ammount of items still being shown inside the circle</li>
+            </ul>
+        </div>
+
+        <!--Loops and Modes-->
+        <div class = "section">
+            <h3 class = "section__title">Loops and Modes</h3>
+            <ul class = "section__ulst">
+                <li class="section__ulst--item">No loops</li>
+                <li class="section__ulst--item">Cart total increases by 1, when the item is added into the cart, the button’s text changes from “+ Add” changes to “- 1 +”</li>
+                <li class="section__ulst--item">When the plus sign or minus sign is clicked, the cart total changes by 1 respectively and stays to the new total</li>
+                <li class="section__ulst--item">When the total is at 1 and the user clicks on the minus sign again, the button goes back to the "+ Add" default</li>
+                <li class="section__ulst--item">The total is still being stored and remembered when the user clicks off the button</li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
