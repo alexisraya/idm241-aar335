@@ -120,6 +120,8 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    justify-self: center;
+    align-self: center;
 }
 
 .btn-items{
@@ -168,11 +170,24 @@ body{
 }
 
 .btn-items{
+    min-width: 130px;
     cursor: default;
 }
 
 .value-label:hover{
     cursor: default;
+}
+
+.outside{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    z-index: 1000;
+}
+
+.outside:hover{
+    /* border: 3px solid var(--darkblue); */
+    cursor: pointer;
 }
 
 .math-btn{
