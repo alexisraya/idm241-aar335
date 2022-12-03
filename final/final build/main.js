@@ -18,10 +18,9 @@ function grow(){
     addButton.classList.add("add-btn-grow");
 
     buttonText.style.display = "none";
-    finalItems.style.display = "flex";
-    // myTimeout = setTimeout(wait, 400);
     buttonText.style.padding= "10px 20px";
-
+    
+    finalItems.style.display = "flex";
     hasChanged = true;
   } 
 }
@@ -44,23 +43,6 @@ let handleClickOutsideElement = function  (elm, callback) {
 
   document.addEventListener('click', fnOutsideElement, true);
 }
-
-// clickField.addEventListener('click', () => {
-//     clickedField = true;
-//     clickedButton = false;
-//     if (target!=addButton){
-//         alert("hit");
-//     }
-// });
-
-// clickField.onclick = function(e) {
-//     if(e.target != addButton) {
-//         alert("not button");
-//     }
-//     else{
-//         alert("button");
-//     }
-// }
 
 addButton.addEventListener('click', () => {
     clickedButton = true;
