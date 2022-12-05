@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>Microinteraction Project - Web Design and Dev</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1 class="title__title"><a class="title__title--link" href = "index.html">Alexis Raya</a></h1>
+            <h2>Art and Design</h2>
+        </div>
+    </header>
+    <main>
+        <div class = "project-wrapper">
+            <div class = "project-title">
+                <h3 class = "project-title__title">Microinteractions Project</h3>
+                <h4 class = "project-title__subtitle">Web Design and Dev</h4>
+                <div class = "project-title__links">
+                    <a class = "project-title__links--link" href="https://github.com/alexisraya/idm241-aar335" target="_blank">GitHub</a>
+                    <a class = "project-title__links--link" href="https://alexisraya.com/idm241/final/build/" target="_blank">Final Project</a>
+                </div>
+            </div>
+            <div class = "project-section">
+                <h5 class = "project-section__title">The Overview</h5>
+                <p class = "project-section__text">
+                    The Microinteractions Project is a project in which I was tasked with updating a currently existing microinteraction and program it using HTML/CSS and JavaScript. For this project, I chose to update Walmart’s add item to cart button microinteraction. I found that the current design lacked transition between button states and would change abruptly and that other interactions like hovering over the plus sign to add a new interaction would not change back to their default state after the interaction had ended.
+                </p>
+                <p class = "project-section__text">
+                    At the end of 10 weeks and 3 phases of the project, I designed and programmed a microinteraction system which included 8 triggers that together created an elevated and more intentional user experience for the Walmart customer.
+                </p>
+            </div>
+
+            <div class = "project-section">
+                <h5 class = "project-section__title">Context and Challenge</h5>
+                <p class = "project-section__text">
+                    This project was a solo project and spanned about 10 weeks. Each week was dedicated to different phases of the project including the alpha description and build, beta description and build, and final description and build. With each phase also came refined detail and more intentional triggers and mode to make the microinteraction interesting and delightful.
+                </p>
+                <p class = "project-section__text">
+                    The main problem found in Walmart’s microinteraction when the user adds an item to the cart was the lack of transition between the default state and the state when the user has added the item. The button simply jumped from one state to the other, which seemed very abrupt and jolting.
+                </p>
+                <p class = "project-section__text">
+                    Additionally, the plus sign would stay stuck in it’s hover state after the user added an item to the cart and would not change back to the default state, even when the user was hovering over the minus sign. This issue also persisted in the minus sign when the user clicked on it to decrease the amount of items that they wanted.
+                </p>
+                <p class = "project-section__text">
+                    Because of these issues, the main goals for this project were:
+                </p>
+                <ol class = "project__section__list">
+                    <li class = "project__section__list--items">To create smooth, animated transitions between each 3 button states (the default state, the state when the user is adding the item to the cart, and the state when the user clicks away from the product card)</li>
+                    <li class = "project__section__list--items">To have each interaction only occur when they are triggered. For example the hover states will only occur when the user is hovering on the element and it will stop when the user hovers off the element.</li>
+                </ol>
+            </div>
+
+            <div class = "project-section">
+                <h5 class = "project-section__title">Process and Insight</h5>
+                <p class = "project-section__text">
+                    This project was developed in 6 phases: the alpha description, alpha build, beta description, beta build, final description, and final build.
+                </p>
+                <p class = "project-section__text">
+                    In the alpha description phase, I identified the key issues in Walmart’s current button and wireframed what my initial solution to the problem. In this version, I had the button go to a state that told the user that they added an item to the cart before showing the number of items that they added. However, I ultimately found that this middle state may become annoying and redundant for some users, so I decided to leave it out for the rest of my phases.
+                </p>
+                <div class = "project-section__images">
+                    <img class = "project-section__image-picture" src = "assets/images/InitialState.png" alt = "image 1"/>
+                    <img class = "project-section__image-picture" src = "assets/images/OnHover.png" alt = "image 2"/>
+                    <img class = "project-section__image-picture" src = "assets/images/OnClick.png" alt = "image 3"/>
+                    <img class = "project-section__image-picture" src = "assets/images/FinalState.png" alt = "image 4"/>
+                </div>
+                
+                <p class = "project-section__text">
+                    I additionally created a style guide for the project during this phase. I identified Walmart’s fonts and also their blue color scheme to use during my design process
+                </p>
+                <img class = "project-section__image-picture" src = "assets/images/StyleGuide.png" alt = "image 5"/>
+                <p class = "project-section__text">
+                    In the alpha build phase, I programmed the first set of triggers for my design. I developed a function where the button would grow to the left when the user clicks on the “+Add” button. The button would also change to include a plus sign, minus sign, and the total number of items included when clicked. With this phase, however, I noticed that the hit boxes for the plus and minus sign were too small, and the user was able to have a negative total. I made note of these bugs which would later be fixed in the beta build.
+                </p>
+                <p class = "project-section__text">
+                    During the beta description phase, I focused on describing and designing the functionality of the plus and minus sign. I designed a hover state which would make each button’s border become white and I also increased the size of the hit box.
+                </p>
+                <img class = "project-section__image-picture" src = "assets/images/Example.png" alt = "image 6"/>
+                <p class = "project-section__text">
+                    When developing the beta build, I added the design changes noted in the beta description and also fixed the bugs that were found in the alpha build. I noticed that the plus and minus sign moved slightly when the total number increased to the 10’s. This was later fixed in the final build.
+                </p>
+                <p class = "project-section__text">
+                    In the final description, I designed a feature where the user could click anywhere on the screen that wasn’t the button or product and the button would minimize to a circle that contained the total number of items. I also designed a product card to further convey where this button would be on Walmart’s website and to give it more context.
+                </p>
+                <img class = "project-section__image-picture" src = "assets/images/Final1.png" alt = "image 7"/>
+                <img class = "project-section__image-picture" src = "assets/images/Final2.png" alt = "image 8"/>
+            </div>
+            <div class = "project-section">
+                <h5 class = "project-section__title">The Solution</h5>
+                <p class = "project-section__text">
+                    The final build contained a product card and an add to cart button inside of the card. Additionally, all 8 triggers were included: clicking on the button, hovering on/off the button, clicking on the plus sign, clicking on the minus sign, hovering on the plus sign, hovering on the minus sign, clicking anywhere on the screen outside of the product card, and clicking on the total number circle.
+                </p>
+                <p class = "project-section__text">
+                    Together, these triggers helped shape a uniform and delightful design that elevated Walmart’s current add to cart button microinteraction. For example, the hover states helped users understand what was clickable and what would happen if the element was clicked. The transition between button modes was smooth and was not as abrupt as the original. Additionally, each feature only occurred when triggers and did not become “stuck” in its triggered state, which was an issue in the original design as well.
+                </p>
+                <p class = "project-section__text">
+                    If I were to work on this project in the future, I would reprogram the plus and minus signs to appear after the button had grown since they currently appear while the button is growing.
+                </p>
+            </div>
+            <div class = "project-section">
+                <h5 class = "project-section__title">The Results</h5>
+                <p class = "project-section__text">
+                    I found this project to be an overall success. It allowed me to increase and apply my knowledge in JavaScript to create a meaningful microinteraction. I also was able to explore what it means to have an intentional and meaningful microinteraction and how that can transform a user’s experience with a product. Additionally, I was able to meet by two goals for this project. I created smooth transitions between each 3 button modes and I made sure that the interactions only occurred when triggered and were not “stuck” at any point during the user flow. I also found that I enjoy breaking projects into alpha, beta, and final phases as it gives me the chance to pace myself and also slow down and see the feasibility of what I want to do.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer__text js-year">Alexis Raya</p>
+        <p class="footer__text">aar335@drexel.edu</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
