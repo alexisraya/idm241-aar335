@@ -372,6 +372,10 @@ br{
     justify-items: center;
 }
 
+.hero-image{
+    border: 2px solid var(--color-brown);
+}
+
 
 footer{
     background-color: var(--color-brown);
